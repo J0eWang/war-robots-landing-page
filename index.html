@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Robots - Tactical Multiplayer Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Visual Header / Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">WAR <span>ROBOTS</span></a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item">Home</a>
+        <a href="#features" class="nav-item">Features</a>
+        <a href="#robots" class="nav-item">Robots</a>
+        <a href="#download" class="btn btn-primary">PLAY NOW</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- container utama -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1 class="hero-title">ENTER THE MECHA BATTLEFIELD</h1>
+      <p class="hero-subtitle">War Robots is the ultimate shooter packed with giant robots that fit right in your pocket! Join epic 6v6 PvP battles.</p>
+      <div class="hero-cta">
+        <a href="#download" class="btn btn-primary btn-large">PLAY FOR FREE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Game Features -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">GAME FEATURES</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">⚔️</div>
+          <h3>6v6 PvP Battles</h3>
+          <p>Join tactical real-time battles with players from all around the world.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3>50+ Unique Robots</h3>
+          <p>Choose your fighter with specialized abilities, jump jets, and heavy shields.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Custom Weapons</h3>
+          <p>Equip plasma cannons, homing missiles, and shotguns to match your playstyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Bagian Macam Macam Robot -->
+<section id="robots" class="robots">
+    <div class="container">
+      <h2 class="section-title">SELECT YOUR MECH</h2>
+      <div class="robot-selector">
+        <div class="robot-tabs" id="robotTabs">
+          <button class="tab-btn active" data-robot="destrier">DESTRIER</button>
+          <button class="tab-btn" data-robot="cossack">COSSACK</button>
+          <button class="tab-btn" data-robot="griffin">GRIFFIN</button>
+        </div>
+        <div class="robot-info" id="robotInfo">
+          <div class="robot-image-wrapper">
+            <img id="robotImg" src="https://api.warrobots.com/storage/robot/6/regular_detail_picture-92ba3ae63140c6b1b5b55aa5ea02d265.jpg" alt="Destrier Mech" class="robot-img">
+          </div>
+          <h3 id="robotName">DESTRIER</h3>
+          <p id="robotRole">Role: Light Scout Mech</p>
+          <p id="robotDesc">Fast and agile, perfect for capturing beacons and tactical guerrilla warfare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian Download -->
+  <section id="download" class="download">
+    <div class="container">
+      <h2 class="section-title">JOIN THE BATTLE TODAY</h2>
+      <p>Available on PC, Mobile, and Consoles.</p>
+      <div class="download-buttons">
+        <button class="btn btn-secondary" onclick="triggerDownload('App Store')">App Store</button>
+        <button class="btn btn-secondary" onclick="triggerDownload('Google Play')">Google Play</button>
+        <button class="btn btn-secondary" onclick="triggerDownload('Steam')">Steam (PC)</button>
+      </div>
+      <p id="downloadStatus" class="download-status"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; MY.GAMES / Pixonic. War Robots Slicing Project.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
